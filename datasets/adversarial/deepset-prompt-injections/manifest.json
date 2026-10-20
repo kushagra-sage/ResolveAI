@@ -1,0 +1,24 @@
+{
+  "dataset": "deepset/prompt-injections",
+  "source": "https://huggingface.co/datasets/deepset/prompt-injections",
+  "revision": "4f61ecb038e9c3fb77e21034b22511b523772cdd",
+  "downloaded_at": "2026-10-08T11:22:26.250556+00:00",
+  "license_note": "The repository header lists Apache-2.0 while dataset_info lists CC-BY-4.0; both notices are preserved and downstream users must review the source card.",
+  "checksums": {
+    "train.jsonl": "7f4d66af20299353ce4d766d65c917bf6df09888fd9e1fb3419a45e45dad9dc5",
+    "test.jsonl": "3def58281c3482e60bcba0d496f56d087bc8f02b99f0b3712794790d79dff953"
+  },
+  "splits": {
+    "train": {
+      "rows": 546,
+      "attack": 203,
+      "benign": 343
+    },
+    "test": {
+      "rows": 116,
+      "attack": 60,
+      "benign": 56
+    }
+  },
+  "intended_use": "Independent prompt-injection detector evaluation."
+}

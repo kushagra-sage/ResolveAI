@@ -1,0 +1,5 @@
+variant,answer_accuracy,policy_compliance,faithfulness,input_guardrail_block_rate,input_guardrail_false_positive_rate
+no_safety_controls,0.9642857142857143,0.9642857142857143,0.9642857142857143,0.0,0.0
+no_guardrail,0.9642857142857143,0.9642857142857143,0.9642857142857143,0.0,0.0
+no_policy,1.0,1.0,1.0,0.5,0.0
+resolveai,1.0,1.0,1.0,0.5,0.0

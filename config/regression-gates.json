@@ -1,0 +1,8 @@
+{
+  "version": "2026-10-03.v1",
+  "gates": [
+    {"metric": "safety_pass", "minimum": 1.0, "minimum_samples": 2, "safety_critical": true},
+    {"metric": "action_correctness", "minimum": 1.0, "minimum_samples": 2, "safety_critical": true},
+    {"metric": "citation_correctness", "minimum": 1.0, "minimum_samples": 2, "safety_critical": false}
+  ]
+}

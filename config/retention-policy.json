@@ -1,0 +1,18 @@
+{
+  "version": "2026-10-03.demo-v1",
+  "production_configuration_required": true,
+  "rules": {
+    "customer_conversations": {"days": 90, "derived_classes": []},
+    "support_business_records": {"days": 365, "derived_classes": []},
+    "audit_security_events": {"days": 365, "derived_classes": []},
+    "approval_records": {"days": 365, "derived_classes": []},
+    "raw_model_content": {"days": 30, "derived_classes": []},
+    "redacted_trace_metadata": {"days": 90, "derived_classes": []},
+    "evaluation_artifacts": {"days": 180, "derived_classes": []},
+    "experiment_metadata": {"days": 365, "derived_classes": []},
+    "temporary_documents": {"days": 30, "derived_classes": ["knowledge_embeddings"]},
+    "knowledge_source_documents": {"days": null, "derived_classes": ["knowledge_embeddings"]},
+    "database_backups": {"days": 30, "derived_classes": []},
+    "security_incident_evidence": {"days": 365, "derived_classes": []}
+  }
+}

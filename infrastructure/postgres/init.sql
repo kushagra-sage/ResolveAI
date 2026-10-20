@@ -1,0 +1,17 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'resolveai_app') THEN
+        CREATE ROLE resolveai_app LOGIN PASSWORD 'resolveai_app' NOSUPERUSER NOCREATEDB NOCREATEROLE;
+    END IF;
+END
+$$;
+
+GRANT CONNECT ON DATABASE resolveai TO resolveai_app;
+GRANT USAGE ON SCHEMA public TO resolveai_app;
+ALTER DEFAULT PRIVILEGES FOR ROLE resolveai_owner IN SCHEMA public
+    GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO resolveai_app;
+ALTER DEFAULT PRIVILEGES FOR ROLE resolveai_owner IN SCHEMA public
+    GRANT USAGE, SELECT ON SEQUENCES TO resolveai_app;
+

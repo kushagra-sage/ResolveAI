@@ -1,0 +1,17 @@
+{
+  "benchmark": "provider-measurement-deterministic",
+  "generated_at": "2026-10-08T11:18:20.398858+00:00",
+  "sample_count": 100,
+  "mode": "deterministic",
+  "model": "resolveai-deterministic-v1",
+  "p50_latency_ms": 0.0042000028770416975,
+  "p95_latency_ms": 0.006000016583129764,
+  "mean_latency_ms": 0.00521100009791553,
+  "mean_input_tokens": 17.19,
+  "mean_output_tokens": 7.0,
+  "mean_cost_usd": null,
+  "price_snapshot_date": null,
+  "input_price_per_million_usd": null,
+  "output_price_per_million_usd": null,
+  "scope_note": "Deterministic mode measures local adapter overhead and has no provider bill."
+}

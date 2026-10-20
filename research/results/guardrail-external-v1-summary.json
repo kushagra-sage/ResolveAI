@@ -1,0 +1,50 @@
+{
+  "benchmark": "resolveai-guardrail-external-v1",
+  "generated_at": "2026-10-08T11:16:01.655557+00:00",
+  "train_count": 546,
+  "test_count": 116,
+  "banking77_benign_test_count": 3080,
+  "systems": {
+    "production_regex": {
+      "accuracy": 0.4827586206896552,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "false_positive_count": 0,
+      "banking77_false_positive_rate": 0.0,
+      "banking77_false_positive_count": 0
+    },
+    "tfidf_svc_general": {
+      "accuracy": 0.9137931034482759,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "false_positive_rate": 0.0,
+      "false_positive_count": 0,
+      "banking77_false_positive_rate": 0.08766233766233766,
+      "banking77_false_positive_count": 270
+    },
+    "tfidf_svc_domain_adapted": {
+      "accuracy": 0.8879310344827587,
+      "precision": 0.9795918367346939,
+      "recall": 0.8,
+      "f1": 0.8807339449541285,
+      "false_positive_rate": 0.017857142857142856,
+      "false_positive_count": 1,
+      "banking77_false_positive_rate": 0.0,
+      "banking77_false_positive_count": 0
+    },
+    "tfidf_svc_word_deployable": {
+      "accuracy": 0.8103448275862069,
+      "precision": 0.9130434782608695,
+      "recall": 0.7,
+      "f1": 0.7924528301886793,
+      "false_positive_rate": 0.07142857142857142,
+      "false_positive_count": 4,
+      "banking77_false_positive_rate": 0.0,
+      "banking77_false_positive_count": 0
+    }
+  },
+  "deployment_status": "The learned detectors are research candidates and are not silently enabled in production. Deployment requires threshold review and model-artifact governance."
+}

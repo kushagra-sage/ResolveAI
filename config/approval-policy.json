@@ -1,0 +1,16 @@
+{
+  "version": "2026-10-03.demo-v1",
+  "currency_note": "Demo minor-unit thresholds; not production company policy.",
+  "refund": {
+    "autonomous_limit_minor": 5000,
+    "single_approval_limit_minor": 50000,
+    "hard_ceiling_minor": 100000
+  },
+  "approval_ttl_minutes": 30,
+  "self_approval": false,
+  "distinct_second_approver": true,
+  "account_closure_approvals": 1,
+  "payment_destination_change": "DENY",
+  "cross_tenant": "DENY",
+  "credential_disclosure": "DENY"
+}

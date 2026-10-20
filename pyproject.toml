@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resolveai"
+version = "0.1.0"
+description = "Production-grade AI customer resolution platform"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.12,<3.15"
+dependencies = [
+  "alembic>=1.14,<2",
+  "boto3>=1.35,<2",
+  "fastapi>=0.115,<1",
+  "langgraph>=0.4,<2",
+  "opentelemetry-exporter-otlp-proto-grpc>=1.30,<2",
+  "opentelemetry-sdk>=1.30,<2",
+  "prometheus-client>=0.21,<1",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "pgvector>=0.3,<1",
+  "psycopg[binary]>=3.2,<4",
+  "PyJWT[crypto]>=2.10,<3",
+  "sqlalchemy>=2.0.36,<3",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "bandit>=1.8,<2",
+  "httpx>=0.28,<1",
+  "mypy>=1.14,<2",
+  "matplotlib>=3.9,<4",
+  "pip-audit>=2.8,<3",
+  "pip-licenses>=5,<6",
+  "pytest>=9.0.3,<10",
+  "pytest-cov>=6,<7",
+  "ruff>=0.9,<1",
+]
+research = [
+  "scikit-learn>=1.6,<2",
+]
+
+[project.scripts]
+resolveai-seed = "resolveai.seed:main"
+resolveai-dev-token = "resolveai.dev_token:main"
+
+[tool.setuptools]
+package-dir = {"" = "apps/api/src"}
+
+[tool.setuptools.packages.find]
+where = ["apps/api/src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+markers = [
+  "integration: tests that require an external dependency",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+packages = ["resolveai"]
+
+[tool.coverage.run]
+branch = true
+source = ["resolveai"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

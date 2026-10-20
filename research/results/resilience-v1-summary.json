@@ -1,0 +1,44 @@
+{
+  "benchmark": "resolveai-resilience-v1",
+  "generated_at": "2026-10-08T11:18:19.433264+00:00",
+  "scenario_count": 5,
+  "recovered_count": 5,
+  "fallback_recovery_success": 1.0,
+  "scenarios": [
+    {
+      "scenario": "evaluation_transient_timeout",
+      "recovered": true,
+      "attempts": 3,
+      "final_status": "completed"
+    },
+    {
+      "scenario": "model_provider_fallback",
+      "recovered": true,
+      "attempts": 3,
+      "final_status": "fallback_completed"
+    },
+    {
+      "scenario": "idempotent_side_effect_retry",
+      "recovered": true,
+      "attempts": 2,
+      "final_status": "single_stable_receipt"
+    },
+    {
+      "scenario": "dead_letter_manual_replay",
+      "recovered": true,
+      "attempts_after_replay": 1,
+      "final_status": "completed"
+    },
+    {
+      "scenario": "outbox_publisher_outage",
+      "recovered": true,
+      "attempts": 2,
+      "final_status": "published",
+      "deliveries": 1
+    }
+  ],
+  "limitations": [
+    "The experiment runs against local PostgreSQL and injected exceptions.",
+    "It does not measure cloud-region loss, real provider outages, or load contention."
+  ]
+}

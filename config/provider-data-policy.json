@@ -1,0 +1,13 @@
+{
+  "version": "2026-10-03.demo-v1",
+  "default_external_provider_allow": ["PUBLIC", "INTERNAL", "CONFIDENTIAL"],
+  "providers": {
+    "local": {"allow": ["PUBLIC", "INTERNAL", "CONFIDENTIAL", "SENSITIVE_PII"]},
+    "openai_compatible": {"allow": ["PUBLIC", "INTERNAL", "CONFIDENTIAL"]},
+    "ollama": {"allow": ["PUBLIC", "INTERNAL", "CONFIDENTIAL", "SENSITIVE_PII"]}
+  },
+  "rules": {
+    "SENSITIVE_PII": "redact_or_tokenize_before_external_provider",
+    "RESTRICTED": "never_send_to_model_provider"
+  }
+}

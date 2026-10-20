@@ -1,0 +1,35 @@
+{
+  "name": "resolveai-web",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:report": "playwright show-report ../../artifacts/playwright-report",
+    "test:a11y": "playwright test tests/accessibility.spec.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "3.10.0",
+    "@tanstack/react-query": "^5.90.2",
+    "oidc-client-ts": "^3.5.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-hook-form": "^7.65.0",
+    "react-router-dom": "^7.9.4",
+    "zod": "3.24.4",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "4.3.4",
+    "typescript": "5.9.3",
+    "vite": "6.4.3"
+  }
+}

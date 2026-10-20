@@ -1,0 +1,1002 @@
+[
+  {
+    "case": 1,
+    "prompt_sha256": "0fcd2a2d0d9ba74071f4ef26ce18927d78bc246e70cf711b50f425f00af3f2ed",
+    "latency_ms": 0.0785999873187393,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 2,
+    "prompt_sha256": "4be51f20036e9f2c79feb0fd78e09f0f95c80eb994b3a9b788c5e6836fee45da",
+    "latency_ms": 0.014699995517730713,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 21,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 3,
+    "prompt_sha256": "f9365b04ea9e5046e21add99290e113155cbaa8c605590ce95774aa3506269ee",
+    "latency_ms": 0.006399990525096655,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 4,
+    "prompt_sha256": "3309d03419a30a6dcf995bd5e79597c19e767a5b1eb43e290ceb5faa42b5511d",
+    "latency_ms": 0.005199981387704611,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 5,
+    "prompt_sha256": "ed62b79aaf4a55b1db40dfc75a8a9ce8d0552c3f41f748325ab232c82dad0963",
+    "latency_ms": 0.0045000051613897085,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 6,
+    "prompt_sha256": "ab1fe1f1be1491987eeeec6b743cf66eee5d1bbce324d92658fcbe6f74b81092",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 7,
+    "prompt_sha256": "23670f5ff2947afbc5150cfad0617f15fea11958a71afda393cea134653cefec",
+    "latency_ms": 0.005799985956400633,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 23,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 8,
+    "prompt_sha256": "6eb93f9be8e84f69924d4ff99d0a8feeae86672bba9314438160bf23629b0197",
+    "latency_ms": 0.0039000005926936865,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 9,
+    "prompt_sha256": "e6a6d9022438f355960b3900f3f29776301aa3302b3335bbaf367f05201361cc",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 12,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 10,
+    "prompt_sha256": "c76850b9859e9589287fcc27e06fd026808219814ba279f12e07a30dc942b2c8",
+    "latency_ms": 0.0048999791033566,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 21,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 11,
+    "prompt_sha256": "14d6755b6c7b6f2d0291675bcf0ac7a377a16462a89a5dc77ee6acc5b082bc04",
+    "latency_ms": 0.0035999983083456755,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 12,
+    "prompt_sha256": "d67086d05dc800753a630c741c7165916ec40a57dd6307933ae5742e76c9da6b",
+    "latency_ms": 0.003999972250312567,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 13,
+    "prompt_sha256": "060da2929e15c737bbe0e8050fd66910749bc1f3963e0ded3b1b17bfca305dc9",
+    "latency_ms": 0.0049000082071870565,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 20,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 14,
+    "prompt_sha256": "de16d4b705c6cbe8fefd37c261d4df237416b8d22675345353931992d66565ac",
+    "latency_ms": 0.0033999967854470015,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 15,
+    "prompt_sha256": "75287da8bf665e522342b9f6861aa071c5e8027de12067ca3010735e20473693",
+    "latency_ms": 0.0047000066842883825,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 20,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 16,
+    "prompt_sha256": "2342d6f83a36329c2269816c5b855a7b2c89e89c918e28713a96be462ff7b86f",
+    "latency_ms": 0.006100017344579101,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 27,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 17,
+    "prompt_sha256": "cfe8b69c050507ea4919f1729412d6c1257617b65fbbec2b04693f6e10a0d1eb",
+    "latency_ms": 0.0043000036384910345,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 18,
+    "prompt_sha256": "d022c875c2bec1330765d78dd2b7bed4c9537d5de8c620bf06f7681d859027f2",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 19,
+    "prompt_sha256": "e2f723777bdaf3d5e487651f6749c098293695873f3ed806c834b7783222860f",
+    "latency_ms": 0.0044000043999403715,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 20,
+    "prompt_sha256": "e360db17d7bea5d327074a221d82d3795bffe836abbf717470424e679909bf1a",
+    "latency_ms": 0.0047000066842883825,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 21,
+    "prompt_sha256": "8aad87c0be0829e90caf30c36de1d50d83c8a3026b2eba9f12fec71a6cb6405f",
+    "latency_ms": 0.0042000028770416975,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 17,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 22,
+    "prompt_sha256": "2d4fc782e2d26378eaf0de963996e1a3c5704e254fffd18b1b72e4b646217d3f",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 23,
+    "prompt_sha256": "75e5991362b8f25c5d376dc3d0e3f1d8c350505972c2ae01b9c5a2a108931051",
+    "latency_ms": 0.0042000028770416975,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 24,
+    "prompt_sha256": "e2fe0e9f1b42aa86688a1fbb0615d3a3a6d700b05de512ebfb4c3dce806f6030",
+    "latency_ms": 0.005500012775883079,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 23,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 25,
+    "prompt_sha256": "c74395010651946162e2e53164ccef6cc28f29082435e90d9e4094a105235242",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 26,
+    "prompt_sha256": "067a4fa4cbc496588408d319b63c82e5dd0215014fa307c9a632bb9d5f40df1a",
+    "latency_ms": 0.004699977580457926,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 27,
+    "prompt_sha256": "e893c9b3164a565abdd5d9f1fb302ede8f1ce957a14ede78658d900202a62da4",
+    "latency_ms": 0.005799985956400633,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 22,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 28,
+    "prompt_sha256": "01366bb760aa310f69fbe0c28462ff4acc1fb1c31a9950b684151392a39d78b1",
+    "latency_ms": 0.0051000097300857306,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 22,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 29,
+    "prompt_sha256": "a0ccea52ac46602c23457ab6e7bd72978d5afbf81307f6b68633a7b54c9ffa9e",
+    "latency_ms": 0.0050000089686363935,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 23,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 30,
+    "prompt_sha256": "8feb6919c4a82e198e85dfd18928f903298764e7e5ca24e03a754a9aaf7b66ba",
+    "latency_ms": 0.0042000028770416975,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 31,
+    "prompt_sha256": "599d5c9ead4a35f37cecaae35599e6d94092d9e34ce6703f315deb546a5cf58f",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 12,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 32,
+    "prompt_sha256": "1274713ef23ad69ef36b62472c223f7c4a693f3ec9f9f29712e430ab16118ced",
+    "latency_ms": 0.0051000097300857306,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 22,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 33,
+    "prompt_sha256": "dd0e875a1ea7938e6e12236121dd391d4db144d056dcef8b70d6b088ed17d227",
+    "latency_ms": 0.004199973773211241,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 34,
+    "prompt_sha256": "720d92ed03e102492ca69a98c1bcac4d37e4555ff94cbd7ce8e517b49b1c76eb",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 35,
+    "prompt_sha256": "a644bfde57a9a7311987f157808ad75091af23b8678bb2af9ca27b42d5dacee1",
+    "latency_ms": 0.0046000059228390455,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 19,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 36,
+    "prompt_sha256": "103af71c5f65d641ab3fe8609545c4dfd42d7644ca98cd5d655c87b136eea8f0",
+    "latency_ms": 0.005699985194951296,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 25,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 37,
+    "prompt_sha256": "76e8bd51e669e04791fd9d9361a6eef872354567b0a5b539141a82c1d1ae8a4a",
+    "latency_ms": 0.005099980626255274,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 23,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 38,
+    "prompt_sha256": "a93fbf0c544ebc3b7681902d93c26a1898d594ef776fff1e0688990e9b3a8543",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 12,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 39,
+    "prompt_sha256": "b562a47a5d85b9e5d916dbae153c34d337971e090017bbddb33557ba13e19273",
+    "latency_ms": 0.004699977580457926,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 17,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 40,
+    "prompt_sha256": "e03022e30caa93c9d4aee18516e94dcc9f4a4b135f38c3033ee057e09656da01",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 41,
+    "prompt_sha256": "84c9819aed1b446789cad3b739f149ba8f528ed50bde9d52c4a0e13db4f694a3",
+    "latency_ms": 0.0042000028770416975,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 42,
+    "prompt_sha256": "1bd1cc6438a8416888e57e3da6d542345bfdabd70dcabd6e2a7da7eedfca1654",
+    "latency_ms": 0.0043000036384910345,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 43,
+    "prompt_sha256": "018891fa56f0915253ff39926c60b25b61cd628299f6eaf332f1990b865267e3",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 44,
+    "prompt_sha256": "56f5a9f534aa664f91c04ff848231b901d9cf48e9e552403269d0edc7ff305b7",
+    "latency_ms": 0.004699977580457926,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 21,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 45,
+    "prompt_sha256": "cbcd0d763653247db94ba28283c130968f20e85d57cbf066b76ab59f12cba838",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 17,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 46,
+    "prompt_sha256": "36e0638c873317c6dacfc894ae0e376698d12eb1a243a1429df4b88c1da95b67",
+    "latency_ms": 0.005500012775883079,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 25,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 47,
+    "prompt_sha256": "73cc2dfe2985e376261a48db486fa86388c06435db88626b3bddac6d632cc0cd",
+    "latency_ms": 0.0040000013541430235,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 48,
+    "prompt_sha256": "6c6e37d10c4dc5218d97acb0e532b7b8a1b85bae63603cf5bb1149ad52b3073f",
+    "latency_ms": 0.0040000013541430235,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 49,
+    "prompt_sha256": "4d27220cb27b572d20965244519034eee78edcded7b85df89ed00c0712bdb040",
+    "latency_ms": 0.0050000089686363935,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 21,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 50,
+    "prompt_sha256": "30c8d4364db4eaef57f0678958a2277574292dd411f2eda55e026000bc48fe0f",
+    "latency_ms": 0.0042000028770416975,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 19,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 51,
+    "prompt_sha256": "3e9a304b53cb80dd935691069460fdac8fbee4153e0d57de226aac49ad720602",
+    "latency_ms": 0.0035999983083456755,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 52,
+    "prompt_sha256": "9fc1ea3d076681506a933518d2d14dad2ebd0098338cfe38fd46e6f128677991",
+    "latency_ms": 0.0035999983083456755,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 53,
+    "prompt_sha256": "0d4a9cb406b006111942bcb705587f8e84b4a7abd6a1ad02d86383289c9a0d46",
+    "latency_ms": 0.0042000028770416975,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 19,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 54,
+    "prompt_sha256": "a50df03d92384f35e97e9545e956621b27d004b8d51dae347da47a4d7c18d2e0",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 55,
+    "prompt_sha256": "5da7e33c82a6ba6f4e702badd2b6d0ce630c885d5f50a190cab248005b8312ed",
+    "latency_ms": 0.0034999975468963385,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 56,
+    "prompt_sha256": "400f71dc7e04ad97a80adc413bdc684a2cfb9dd8c789bf6fe1c1876b65cb3192",
+    "latency_ms": 0.005500012775883079,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 25,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 57,
+    "prompt_sha256": "f664caa7bbe1cb5877d2e287d7361ab36d27b2a2da96bb8a296e5b1c2222823f",
+    "latency_ms": 0.0051000097300857306,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 22,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 58,
+    "prompt_sha256": "d2ab5bd9d290635dff089db5d4e51e4075ee3dcb34b4d0782f2303a10a3d25b6",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 59,
+    "prompt_sha256": "3c715603fd18753e94b16273dd650ce5bcce3e53765911ab87046e79afbd936a",
+    "latency_ms": 0.0044000043999403715,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 60,
+    "prompt_sha256": "14731ee56a199d50880eb95adc3b9ce9328455c7cc8de0d961245b9cb9b95057",
+    "latency_ms": 0.0043000036384910345,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 18,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 61,
+    "prompt_sha256": "6ce0a5b4ae2721e1dc2c4c85fc74da46d0c9f50a98ddcce2b8184011ae9de3d0",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 17,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 62,
+    "prompt_sha256": "d02deb4a75f5843d9647112897f6ada38e4a51ddad4c925ad01aad43dd37b3f0",
+    "latency_ms": 0.005400012014433742,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 24,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 63,
+    "prompt_sha256": "eb2158423997a1d0cb2347aa565dab3ec3a47b8f2578ea800c4248c2160d8301",
+    "latency_ms": 0.0043000036384910345,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 17,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 64,
+    "prompt_sha256": "51db3a7745ee66e9a3f2487b6404ac9bc7532ab48ee1dfb7f439d8c9e55c436a",
+    "latency_ms": 0.0035999983083456755,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 65,
+    "prompt_sha256": "eb070bd4c91ad9e5f799dedbee385ab1738786aec608f2b33b8eb9af1f4e40ab",
+    "latency_ms": 0.0050000089686363935,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 22,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 66,
+    "prompt_sha256": "f2d33426153ca78183936b223e849f4943c65f13fe3a91e77181d10fbdf5d059",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 67,
+    "prompt_sha256": "8048d48f7596a9205e8ec80d746b8f58249ced40c729416b73c2de65f3579754",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 68,
+    "prompt_sha256": "8cbda2b6cf891904154c7c5b1efdf185ac48bef863590ae58e5f33a19b014f85",
+    "latency_ms": 0.0040000013541430235,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 69,
+    "prompt_sha256": "3bad9fa9ea1a1d5d217805f59100c9f4930df77d7d746fcb160e7e843dd38713",
+    "latency_ms": 0.0045000051613897085,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 19,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 70,
+    "prompt_sha256": "73cfe058af948b166aa225851941b479e358a5424504d8df779fc5e32a729dd2",
+    "latency_ms": 0.0051000097300857306,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 22,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 71,
+    "prompt_sha256": "393d52aefb2888dfcc3468b9ec568df0eba636752ca72c2b142123a6860ca461",
+    "latency_ms": 0.0043000036384910345,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 19,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 72,
+    "prompt_sha256": "f153af1b96b6a8f8928b7db05274bcece8b17ba29e3a12bc0e7421d5fc9437e6",
+    "latency_ms": 0.0046000059228390455,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 20,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 73,
+    "prompt_sha256": "4be92ef1cca5f743cc62910fc6ba626666078bbedbd8565d5149a77ecac220ee",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 74,
+    "prompt_sha256": "ba1ed23910839be3f9c61a7c6704fd124bd6c21883ce777a358a6bea29a32d1e",
+    "latency_ms": 0.0033999967854470015,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 75,
+    "prompt_sha256": "2d9d2b218712c7a55b5fe5ff16d77b6d389d249ebd4236be8acf4fa8bf21a02e",
+    "latency_ms": 0.0046000059228390455,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 21,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 76,
+    "prompt_sha256": "2e7c9f0dd2ea757bbd5ea14389f0a2ff0046c5bc632ad3e6cfff45b0a25f9672",
+    "latency_ms": 0.006699992809444666,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 31,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 77,
+    "prompt_sha256": "f15db7e148572e98e59696bde8fb82dac704279c7df3eb37118a0da601f7ea31",
+    "latency_ms": 0.006000016583129764,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 27,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 78,
+    "prompt_sha256": "a4adc928f969112bac8380f9fcea3314da0b338a4af2bfeb7658f64aa7ed3612",
+    "latency_ms": 0.0045000051613897085,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 19,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 79,
+    "prompt_sha256": "6979f7ca896f71f1e3f8e20823ec66b9d5987d8d002ca5f87bd2601461614b2d",
+    "latency_ms": 0.0039000005926936865,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 80,
+    "prompt_sha256": "17bd38677f0ecef427ab41870c2e03c3916359992377b7728e0c07c997a2736c",
+    "latency_ms": 0.0039000005926936865,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 81,
+    "prompt_sha256": "95e7baf4fac9bad73561721641c3a125d51269bec8318746fddeb92c885fbf1b",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 82,
+    "prompt_sha256": "a994079bd63be76659b92c99de66c70d5355b70ead1e404ab0932d5f1ed918f5",
+    "latency_ms": 0.0039000005926936865,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 83,
+    "prompt_sha256": "8a53e8f9c4d96814bf924a2805cf2a9e750ce3980185d7a4f4f8ebc3f2d05553",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 84,
+    "prompt_sha256": "795247a40c864058a5cf80e8427d0937dd957ac319938a4bdc7efe0f83c11059",
+    "latency_ms": 0.0040000013541430235,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 85,
+    "prompt_sha256": "b8de690e91a922f82530719d74f1de0fac1e73944261056d2b4d14d3e95ff3c2",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 86,
+    "prompt_sha256": "3ac0f213b4d45ff24ec74e9bc2bdbf09dae1b34b8f27f6b9aba7ad37d1b8db59",
+    "latency_ms": 0.0043000036384910345,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 87,
+    "prompt_sha256": "f162d41bfdf14032009c9cbd406c6306dfde6fefc2f61fa0aa43b62854c65790",
+    "latency_ms": 0.0039000005926936865,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 88,
+    "prompt_sha256": "5b1fa2b1a276a17389cb3ada505f4dcb8f0c1cc1d0bd868a3ff6664b5a47fc9c",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 89,
+    "prompt_sha256": "8e57b4b6e0a306cfb20c13f5fd96f15d3a0f1f9eac43834eed990c74933514c9",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 12,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 90,
+    "prompt_sha256": "28d266355b058c2ab1b397c0a1c2c9251f730210073416dd1adaf2043b48c58b",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 13,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 91,
+    "prompt_sha256": "7a6db9c31262e977088d293915e7ac6078c06e2138f0e498672335178a7a03a9",
+    "latency_ms": 0.0034999975468963385,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 11,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 92,
+    "prompt_sha256": "88e37b85e95cc9ab5fa2b80c036a671137c0774b28b3150dca72f4f813b2ae6a",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 93,
+    "prompt_sha256": "93b6f73e41f34b137b0675715640bd32c944d1f45dad5728fe85f12c0b522b02",
+    "latency_ms": 0.0042000028770416975,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 94,
+    "prompt_sha256": "51684082dbb8f2ca12a97dcd7e83658be1aecc785d53e7fc97a76ff6f0c85206",
+    "latency_ms": 0.0039000005926936865,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 95,
+    "prompt_sha256": "ccdf070714d53b2ceee4f6df349c608002b85e897868d03b9ae020280d486d0e",
+    "latency_ms": 0.0040000013541430235,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 16,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 96,
+    "prompt_sha256": "d96bac07251ef23c2d392c8997741dc71382b369e0afb33b2fe13f1cb967376a",
+    "latency_ms": 0.0036999990697950125,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 97,
+    "prompt_sha256": "87f0ece81160edfb174fbd79679e18a0124414af83e4a21fa26c371b81432aca",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 17,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 98,
+    "prompt_sha256": "99ba23ea1f46226898fe607da3a3545aa4b4d7fb03be7aa60b6cc3ef799bebe3",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 99,
+    "prompt_sha256": "2b60aa0e79c938b1c68fc7f5543f61356b6d7b897b2d381f7d77f633593044e8",
+    "latency_ms": 0.0041000021155923605,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  },
+  {
+    "case": 100,
+    "prompt_sha256": "f242a6591e0a280202759869c4d9611b8011dddb83523ea382fe587b9b5d3657",
+    "latency_ms": 0.0037999998312443495,
+    "provider": "deterministic",
+    "model": "resolveai-deterministic-v1",
+    "input_tokens": 15,
+    "output_tokens": 7,
+    "cost_usd": null
+  }
+]

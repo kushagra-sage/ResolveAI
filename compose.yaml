@@ -1,0 +1,187 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: resolveai
+      POSTGRES_USER: resolveai_owner
+      POSTGRES_PASSWORD: resolveai_owner
+    ports:
+      - "5432:5432"
+    volumes:
+      - resolveai-postgres:/var/lib/postgresql/data
+      - ./infrastructure/postgres/init.sql:/docker-entrypoint-initdb.d/001-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U resolveai_owner -d resolveai"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7.4-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - resolveai-redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.8.0
+    init: true
+    profiles: ["identity"]
+    command: ["start-dev", "--import-realm"]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: local-keycloak-change-me
+    volumes:
+      - ./infrastructure/keycloak/resolveai-realm.json:/opt/keycloak/data/import/resolveai-realm.json:ro
+      - resolveai-keycloak:/opt/keycloak/data
+    ports:
+      - "8080:8080"
+
+  seaweedfs:
+    image: chrislusf/seaweedfs:4.48
+    profiles: ["storage"]
+    environment:
+      AWS_ACCESS_KEY_ID: resolveai-local
+      AWS_SECRET_ACCESS_KEY: resolveai-local-change-me
+      S3_BUCKET: resolveai-artifacts
+    volumes:
+      - resolveai-object-store:/data
+    ports:
+      - "127.0.0.1:9000:8333"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:9333/cluster/status"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/api.Dockerfile
+    env_file: .env
+    environment:
+      RESOLVEAI_DATABASE_URL: postgresql+psycopg://resolveai_app:resolveai_app@postgres:5432/resolveai
+      RESOLVEAI_MIGRATION_DATABASE_URL: postgresql+psycopg://resolveai_owner:resolveai_owner@postgres:5432/resolveai
+      RESOLVEAI_REDIS_URL: redis://redis:6379/0
+      RESOLVEAI_ARTIFACT_ENDPOINT_URL: http://seaweedfs:8333
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
+      OTEL_SERVICE_NAME: resolveai-api
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  detector-worker:
+    image: resolveai-api
+    build:
+      context: .
+      dockerfile: infrastructure/docker/api.Dockerfile
+    command: ["python", "-m", "resolveai.detector_worker"]
+    working_dir: /workspace
+    env_file: .env
+    environment:
+      RESOLVEAI_DATABASE_URL: postgresql+psycopg://resolveai_app:resolveai_app@postgres:5432/resolveai
+      RESOLVEAI_REDIS_URL: redis://redis:6379/0
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
+      OTEL_SERVICE_NAME: resolveai-detector-worker
+      PYTHONPATH: /workspace/apps/api/src
+    volumes:
+      - ./:/workspace:ro
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  durable-worker:
+    image: resolveai-api
+    build:
+      context: .
+      dockerfile: infrastructure/docker/api.Dockerfile
+    command: ["python", "-m", "resolveai.durable_worker"]
+    working_dir: /workspace
+    env_file: .env
+    environment:
+      RESOLVEAI_DATABASE_URL: postgresql+psycopg://resolveai_app:resolveai_app@postgres:5432/resolveai
+      RESOLVEAI_REDIS_URL: redis://redis:6379/0
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
+      OTEL_SERVICE_NAME: resolveai-durable-worker
+      PYTHONPATH: /workspace/apps/api/src
+    volumes:
+      - ./:/workspace:ro
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.130.1
+    command: ["--config=/etc/otelcol/config.yaml"]
+    volumes:
+      - ./infrastructure/otel/collector.yaml:/etc/otelcol/config.yaml:ro
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+      - "8889:8889"
+
+  prometheus:
+    image: prom/prometheus:v3.4.2
+    command: ["--config.file=/etc/prometheus/prometheus.yml"]
+    volumes:
+      - ./infrastructure/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+    depends_on:
+      - api
+      - otel-collector
+
+  grafana:
+    image: grafana/grafana:12.1.1
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: local-grafana-change-me
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+    volumes:
+      - ./infrastructure/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./infrastructure/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports:
+      - "3001:3000"
+    depends_on:
+      - prometheus
+
+  web:
+    image: node:24-alpine
+    working_dir: /workspace/apps/web
+    command: ["sh", "-c", "npm install && npm run dev -- --host 0.0.0.0 --port 3000"]
+    environment:
+      VITE_API_URL: http://localhost:8000
+      VITE_OIDC_AUTHORITY: http://localhost:8080/realms/resolveai
+      VITE_OIDC_CLIENT_ID: resolveai-api
+      VITE_OIDC_REDIRECT_URI: http://localhost:3000/auth/callback
+      VITE_OIDC_POST_LOGOUT_REDIRECT_URI: http://localhost:3000/
+    volumes:
+      - ./:/workspace
+      - resolveai-web-node-modules:/workspace/apps/web/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  resolveai-postgres:
+  resolveai-redis:
+  resolveai-keycloak:
+  resolveai-object-store:
+  resolveai-web-node-modules:
